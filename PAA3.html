@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SuKyo Ticket Hub</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
+  <style>
+    .modal-title {
+      cursor: move;
+    }
+    .modal-content {
+      background-color: black;
+      color: whitesmoke;
+    }
+  </style>
+</head>
+<body style="background-image:url(PAA3_pics/SukyoBG.png);">
+  <div class="modal in modal-resize modal-drag bg-dark" id="modal-id" style="display:block">
+    <div class="modal-dialog " id="movableDialog">
+      <div class="modal-content" id="resizableContent">
+        <div class="modal-header modal-drag-handle">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Join the SuKyo Newsletter!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Hey, drag and resize me!</p>
+          <p>Want to stay up to date with the latest event tickets available?</p>
+          <div class="text-center">
+          <img src="PAA3_pics/NewsL.png" class="mx-auto d-block" style="width:50%">
+          </div>
+          <br>
+          <p>Join the SuKyo Newsletter for advance updates regarding events and upcoming releases!</p>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-default" data-dismiss="modal" href="SuKyo_main.html">Enter SuKyo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+         
+         // For Moving
+        $('#movableDialog').draggable({
+          handle: ".modal-header"
+        });
+
+        // For Resizing
+        $('#resizableContent').resizable({
+          minHeight: 200,
+          minWidth: 200
+        });
+    </script>
+</body>
+</html>
