@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SuKyo Ticket Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      color: white;
+      padding: 25px;
+    }
+
+    img
+    {
+      width: 70%;
+      margin: auto;
+    }
+  </style>
+
+</head>
+<body style="background-color: black;">
+
+<div class="jumbotron" style="background-image: url(PAA3_pics/SukyoBG.png);">
+  <div class="container text-center">
+    <img src="PAA3_pics/SukyoLogo.png" style="width:10%">
+  </div>
+</div>
+
+<div class="container p-3 my-2 border rounded-pill" style="background-color: black;">
+    <h2 class="text-center" style="color: yellow;">SuKyo Ticket Order Form</h2>
+  </div>
+  <br>
+  <br>
+  <form action="SuKyo_checkout.html" class="was-validated">
+  <div class="container p-5 my-1 border rounded-top" style="background-color: black; color: yellow;">
+        <div class="col-sm-10">
+    <label for="uname" class="form-label text-light">Full Name:</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter Full Name" name="uname" required>
+        <div class="form-floating mb-3 mt-3">
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email"required>
+      <label for="email">Email</label>
+    </div>
+    <div class="valid-feedback" style="color: black;">Valid.</div>
+        <div class="invalid-feedback" style="color: black;">Please fill out this field.</div>
+    <h3 class="text-light">Step 1: Select your country.</h3>
+    <select class="form-select" style="color: black;">
+      <option>Philippines</option>
+      <option>Malaysia</option>
+      <option>Singapore</option>
+      <option>Thailand</option>
+    </select>
+  </div>
+  </div>
+
+  <div class="container p-5 my-1 text-light border" style="background-color: black; color: yellow;">
+        <div class="col-sm-10">
+          <h3>Step 2: Amount of tickets</h3>
+              <select class="form-select" style="color: black;">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+        </div>
+        <div class="col-sm-10">
+          <h3>Step 3: Select Concert</h3>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">
+            <label class="form-check-label" for="radio1">Stray Kids (SKZ)</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">
+            <label class="form-check-label" for="radio2">Taylor Swift's Red</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option6">
+            <label class="form-check-label" for="radio7">Travis Scott's AstroWorld</label>
+          </div>
+        </div>
+        </div>
+    </div>
+
+     <div class="container p-2 my-1 text-center">
+     <button type="submit" class="btn btn-warning opacity-50 btn-lg">Proceed to Check-out</button>
+      </div>
+  </form>
+</body>
+</html>
