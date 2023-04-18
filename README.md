@@ -1,2 +1,2 @@
-# CS2240_DelaTorre
- Applications Development purposes.
+# Portfolio_DelaTorre
+Renovation in progress.
